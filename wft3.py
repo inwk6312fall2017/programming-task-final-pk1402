@@ -15,7 +15,7 @@ for forcast in fc:
 	print(forcasts['date'])
 	print(forcasts['high'])
 	print(forcasts['low'])
-def compute_stats(self)
+def compute_stats(self):
 	weather_handle = weather.Weather()
 	self.high_temperature= []
 	self.low_temperature=[]
