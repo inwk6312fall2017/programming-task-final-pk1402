@@ -27,3 +27,10 @@ def compute_stats(self):
 
 	day_count = 0
 	fc = location.forcasts()[:5]
+for forecasts in forecastslist:
+		self.dates.append('date')
+		self.high_temperature.append(forecasts['high'])
+		self.low_temperature.append(forecasts['low'])
+		if forcast_text.find('Rain') != -1:
+			self.rainy_days_index.appedn(day_count)
+		day_count += 1
