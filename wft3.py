@@ -2,19 +2,6 @@
 from weather import Weather
 weather = Weather
 dummy=Weather
-
-#Lookup WOEID via http://weather.yahoo.com.
-
-#lookup = weather.lookup(560743)
-#condition = lookup.condition()
-#print ['condition']
-
-# Lookup via location name.
-
-location = weather.lookup_by_location('halifax')
-condition = location.condition()
-#print ['condition']
-
 # Get weather forecasts for the upcoming days.
 
 #for forecasts in location.forecast():
@@ -22,3 +9,9 @@ condition = location.condition()
     #print forecasts['date']
     #print forecasts['high']
     #print forecasts['low']
+forecastslist = location.forcast()[:5]
+for forcast in forecastslist:
+	print(forcasts['text'])
+	print(forcasts['date'])
+	print(forcasts['high'])
+	print(forcasts['low'])
