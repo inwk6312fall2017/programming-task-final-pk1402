@@ -42,3 +42,5 @@ def print_stats(self):
 		print("IT will be raining ")
 		for i in self.rainy_days_index:
 			print(self.dates[i])
+def main():
+	metro = input('please enter city name:')
